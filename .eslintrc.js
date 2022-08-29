@@ -5,7 +5,7 @@ module.exports = {
     },
     "extends": [
         "eslint:recommended",
-        "plugin:react/recommended"
+        "plugin:react/recommended",
     ],
     "overrides": [
     ],
@@ -17,5 +17,9 @@ module.exports = {
         "react"
     ],
     "rules": {
+        'react/jsx-filename-extension' : [1, { extenstions: ['.js', '.jsx'] }],
+        'react/react-in-jsx-scope': 'off',
+        'no-unused-vars':'off',
+        'react/prop-types':'off'
     }
 }

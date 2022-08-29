@@ -1,11 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
+import Header from "../header";
 
-export default function Home() {
+function Layout( {children} ) {
     return (
         <Container>
-            Home
+            <Header/>
+            {children}
         </Container>
     )
 }
 const Container = styled.div``;
+
+export default Layout;
