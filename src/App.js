@@ -1,15 +1,16 @@
+import React from 'react';
 import styled from 'styled-components';
-import { globalStyled } from "./styles/GlobalStyled";
-import { Routes, Route } from "react-router-dom";
-import Home from "./pages/home";
+import { GlobalStyled } from "./styles/GlobalStyled";
+import Layout from "./shared/layout";
+import Routes from "./Routes";
 
 function App() {
     return (
         <Container>
-            <globalStyled />
-            <Routes>
-                <Route path={"/"} element={<Home/>}/>
-            </Routes>
+            <GlobalStyled />
+            <Layout>
+                <Routes/>
+            </Layout>
         </Container>
     )
 }
